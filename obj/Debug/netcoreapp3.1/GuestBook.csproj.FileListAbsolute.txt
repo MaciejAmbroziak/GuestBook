@@ -35,3 +35,4 @@ C:\Users\macie\source\repos\GuestBook\obj\Debug\netcoreapp3.1\GuestBook.dll
 C:\Users\macie\source\repos\GuestBook\obj\Debug\netcoreapp3.1\GuestBook.pdb
 C:\Users\macie\source\repos\GuestBook\obj\Debug\netcoreapp3.1\GuestBook.genruntimeconfig.cache
 C:\Users\macie\source\repos\GuestBook\obj\Debug\netcoreapp3.1\GuestBook.csproj.CopyComplete
+C:\Users\macie\source\repos\GuestBook\obj\Debug\netcoreapp3.1\Razor\Views\Entry\List.cshtml.g.cs

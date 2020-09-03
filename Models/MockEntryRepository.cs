@@ -11,14 +11,14 @@ namespace GuestBook.Models
         public IEnumerable<Entry> AllEntries =>
             new List<Entry>
             {
-                new Entry {ID = 1, User = _userRepository.AllUsers.ToList()[0], Description="Lorem"},
-                new Entry {ID = 2, User = _userRepository.AllUsers.ToList()[1], Description = "Ipsum"},
-                new Entry {ID = 3, User = _userRepository.AllUsers.ToList()[3], Description = "Dolor"}
+                new Entry {EntryID = 1, User = _userRepository.AllUsers.ToList()[0], Description="Lorem Ipsum Dolor"},
+                new Entry {EntryID = 2, User = _userRepository.AllUsers.ToList()[1], Description = "Lorem Ipsum Dolor"},
+                new Entry {EntryID = 3, User = _userRepository.AllUsers.ToList()[2], Description = "Lorem Ipsum Dolor"}
             };
 
         public Entry getEntryById(int EntryID)
         {
-            return AllEntries.FirstOrDefault(e => e.ID == EntryID);
+            return AllEntries.FirstOrDefault(e => e.EntryID == EntryID);
         }
     }
 }

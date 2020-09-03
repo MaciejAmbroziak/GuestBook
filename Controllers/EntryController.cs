@@ -18,9 +18,9 @@ namespace GuestBook.Controllers
             _userRepository = userRepository;
         }
 
-        public IActionResult Index()
+        public ViewResult List()
         {
-            return View();
+            return View(_entryRepository.AllEntries);
         }
     }
 }

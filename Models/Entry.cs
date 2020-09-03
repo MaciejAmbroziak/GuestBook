@@ -7,7 +7,7 @@ namespace GuestBook.Models
 {
     public class Entry
     {
-        public int ID { get; set; }
+        public int EntryID { get; set; }
         public User User { get; set; }
         public string Description { get; set; }
     }
