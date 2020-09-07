@@ -10,12 +10,11 @@ namespace GuestBook.Controllers
     public class EntryController : Controller
     {
         private readonly IEntryRepository _entryRepository;
-        private readonly IUserRepository _userRepository;
+  
 
-        public EntryController(IEntryRepository entryRepository, IUserRepository userRepository)
+        public EntryController(IEntryRepository entryRepository)
         {
             _entryRepository = entryRepository;
-            _userRepository = userRepository;
         }
 
         public ViewResult List()

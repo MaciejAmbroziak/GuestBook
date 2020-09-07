@@ -8,5 +8,6 @@ namespace GuestBook.Models
     public interface IUserRepository
     {
         IEnumerable<User> AllUsers { get; }
+        public void AddUser(User user);
     }
 }
