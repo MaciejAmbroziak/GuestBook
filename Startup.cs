@@ -26,7 +26,7 @@ namespace GuestBook
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<IUserRepository, MockUserRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IEntryRepository, EntryRepository>();
             services.AddRazorPages();
         }

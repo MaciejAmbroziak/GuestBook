@@ -1,0 +1,22 @@
+﻿@model GuestBook.Models.User
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+<div>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="GivenName"></label>
+            <input id="GivenName" asp-for="GivenName" value="@Model?.GivenName" />
+        </div>
+        <div class="form-group">
+            <label asp-for="FamilyName"></label>
+            <input id="FamilyName" asp-for="FamilyName" value="@Model?.FamilyName"/>
+        </div>
+        <div>
+            <input id="UserId" type="hidden" asp-for="UserId" value="@Model?.UserId"/>
+            <input asp-action="SaveUser" asp-controller="User" type="submit"/>
+        </div>
+    </form>
+</div>
+
+
